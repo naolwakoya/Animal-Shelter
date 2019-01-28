@@ -3,6 +3,8 @@ using namespace std;
 #include <iomanip>
 #include <string>
 
+#include "Animal.h"
+
 Animal::Animal(string nick)
   : name(nick), status("idle") { }
 

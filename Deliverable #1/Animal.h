@@ -12,7 +12,7 @@ public:
 protected:
   string health[MAX_MOVES];
   int goodHealth;
-  virtual void initMoves() = 0;
+  virtual void initHealth() = 0;
 
 private:
   string name;
