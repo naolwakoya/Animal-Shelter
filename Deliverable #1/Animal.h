@@ -3,21 +3,21 @@
 
 class Animal{
 public:
-  Animal(string = "unknown");
-  virtual ~Animal();
-  string getName();
-  string getStatus();
-  virtual void healthStatus;
-
-protected:
-  string health[MAX_MOVES];
-  int goodHealth;
-  virtual void initHealth() = 0;
+  Animal(string, string);
+  ~Animal();
+  int getID();
+  string getAnimalName();
+  string getAnimalAge();
+  int addAnimals(Animal*);
+  AnimalType& getAnimals();
 
 private:
+  static int nextId;
+
+  int id;
   string name;
-  string status;
-  virtual string healthStatus();
+  string age;
+
 
 };
 
