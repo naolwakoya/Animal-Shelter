@@ -1,36 +1,32 @@
-#include <iostream>
-using namespace std;
+#include <iomanip>
 #include <string>
-
 #include "Animal.h"
 
-Animal::Aniaml(string n, string a ){
+Animal::Animal(string t, string n,string g,string c, int a){
+  type = t;
   name = n;
+  gender = gc;
+  colour = c;
   age = a;
-  id = nextID++;
+}
+
+string Animal::getType(){
+  return (type);
+}
+
+string Animal::getName(){
+  return (name);
 
 }
 
-Animal::~Animal(){
-
+string Animal::getGender(){
+  return (gender);
 }
 
-int Animal::getID(){
-  return id;
+string Animal::getColour(){
+  return (colour);
 }
 
-sting Animal::getAnimalName(){
-  return name;
-}
-
-string Animal::getAnimalAge(){
-  return age;
-}
-
-AnimalType& Animal::getAnimals(){
-  return animals;
-}
-
-int Animal::addAnimals(Animal* animal){
-  return animals.add(animal);
+int Animal::getAge(){
+  return (age);
 }

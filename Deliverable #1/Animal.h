@@ -1,24 +1,23 @@
 #ifndef ANIMAL_H
 #define ANIMAL_H
 
-class Animal{
+using namespace std;
+
+class Animal {
 public:
-  Animal(string, string);
-  ~Animal();
-  int getID();
-  string getAnimalName();
-  string getAnimalAge();
-  int addAnimals(Animal*);
-  AnimalType& getAnimals();
+  Animal(string, string, string, string, int);
+  string getType();
+  string getName();
+  string getGender();
+  string getColour();
+  int getAge();
 
 private:
-  static int nextId;
-
-  int id;
+  string type;
   string name;
-  string age;
+  string gender;
+  string colour;
+  int age;
 
 
-};
-
-#endif
+}
