@@ -4,9 +4,11 @@ using namespace std;
 
 #include "Customer.h"
 
-Customer::Customer(string n, string a ){
+int Customer::nextId = 1000;
+Customer::Customer(string n, string a, string o){
   name = n;
   age = a;
+  address = o;
   id = nextID++;
 
 }
@@ -16,19 +18,23 @@ Customer::~Customer(){
 }
 
 int Customer::getID(){
-  return id;
+  return (id);
 }
 
 sting Customer::getCustomerName(){
-  return name;
+  return (name);
 }
 
 string Customer::getCustomerAge(){
-  return age;
+  return (age);
+}
+
+string Customer::getAddress(){
+  return (address);
 }
 
 CustomerType& Customer::getCustomers(){
-  return Customers;
+  return (Customers);
 }
 
 int Customer::addCustomers(Customer* Customer){

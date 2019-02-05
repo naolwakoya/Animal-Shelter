@@ -3,33 +3,33 @@ using namespace std;
 #include <iomanip>
 #include <string>
 
-#include "AnimalArray.h"
+#include "CustomerArray.h"
 
-AnimalArray::AnimalArray(){
+CustomerArray::CustomerArray(){
   size = 0;
 }
 
-AnimalArray::~AnimalArray() {
+CustomerArray::~CustomerArray() {
   for (int i = 0; i < size; i++){
     delete elements[i];
   }
 
 }
 
-int AnimalArray::addAnimal(Animal* newAnimal){
-  if(size > MAX_ANIMAL){
+int CustomerArray::addCustomer(Customer* newCustomer){
+  if(size > MAX_CUSTOMER){
     return(C_NOK);
   }else{
-    elements[size] = newAnimal;
+    elements[size] = newCustomerArray;
     zize++;
     return(C_OK);
   }
 }
 
-int AnimalArray::getSize(){
+int CustomerArray::getSize(){
   return size;
 }
 
-Anim* AnimalArray::get(int INDEX){
-  return (element[INDEX]);
+Anim* CustomerArray::get(int INDEX){
+  return (elements[INDEX]);
 }

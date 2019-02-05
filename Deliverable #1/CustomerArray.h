@@ -1,15 +1,16 @@
-#ifndef ANIMAL_H
-#define ANIMAL_H
+#ifndef CUSTOMERARRAY_H
+#define CUSTOMERARRAY_H
 
-class Animal{
+class CustomerArray{
 public:
-  AnimalArray();
-  ~AnimalArray();
-  int addAnimal(Animal*);
+  CustomerArray();
+  ~CustomerArray();
+  int addCustomer(Customer*);
   int getSize();
   Anim* get(int);
+
 private:
-  Animal elements[MAX_ANIMAL];
+  Customer elements[MAX_CUSTOMER];
   int size;
 
 };
